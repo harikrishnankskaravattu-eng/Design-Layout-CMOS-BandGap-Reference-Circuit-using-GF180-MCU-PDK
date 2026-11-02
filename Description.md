@@ -1,1 +1,1 @@
-
+Performing gm/ID-based characterization of NMOS and PMOS transistors using the GF180MCU 180nm CMOS PDK. The project focuses on extracting and analyzing the relationship between transconductance efficiency (gm/ID) and drain current (ID) through transistor-level simulations to support transistor sizing and bias selection in analog IC design.
