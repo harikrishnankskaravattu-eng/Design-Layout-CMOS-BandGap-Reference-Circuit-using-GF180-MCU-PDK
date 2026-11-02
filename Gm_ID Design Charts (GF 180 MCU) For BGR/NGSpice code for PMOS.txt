@@ -1,0 +1,158 @@
+name=NGSPICE only_toplevel=true
+value="
+.option wnflag=1
+.option savecurrents
+.control
+
+save @m.xm1.m0[gm]
+save @m.xm1.m0[vth]
+save @m.xm1.m0[gds]
+save @m.xm1.m0[id]
+save @m.xm1.m0[vds]
+save @m.xm1.m0[cgg]
+save @m.xm1.m0[vgs]
+
+save @m.xm2.m0[gm]
+save @m.xm2.m0[vth]
+save @m.xm2.m0[gds]
+save @m.xm2.m0[id]
+save @m.xm2.m0[vds]
+save @m.xm2.m0[cgg]
+save @m.xm2.m0[vgs]
+
+save @m.xm3.m0[gm]
+save @m.xm3.m0[vth]
+save @m.xm3.m0[gds]
+save @m.xm3.m0[id]
+save @m.xm3.m0[vds]
+save @m.xm3.m0[cgg]
+save @m.xm3.m0[vgs]
+
+save @m.xm4.m0[gm]
+save @m.xm4.m0[vth]
+save @m.xm4.m0[gds]
+save @m.xm4.m0[id]
+save @m.xm4.m0[vds]
+save @m.xm4.m0[cgg]
+save @m.xm4.m0[vgs]
+
+save @m.xm5.m0[gm]
+save @m.xm5.m0[vth]
+save @m.xm5.m0[gds]
+save @m.xm5.m0[id]
+save @m.xm5.m0[vds]
+save @m.xm5.m0[cgg]
+save @m.xm5.m0[vgs]
+
+save @m.xm6.m0[gm]
+save @m.xm6.m0[vth]
+save @m.xm6.m0[gds]
+save @m.xm6.m0[id]
+save @m.xm6.m0[vds]
+save @m.xm6.m0[cgg]
+save @m.xm6.m0[vgs]
+
+save @m.xm7.m0[gm]
+save @m.xm7.m0[vth]
+save @m.xm7.m0[gds]
+save @m.xm7.m0[id]
+save @m.xm7.m0[vds]
+save @m.xm7.m0[cgg]
+save @m.xm7.m0[vgs]
+
+save @m.xm8.m0[gm]
+save @m.xm8.m0[vth]
+save @m.xm8.m0[gds]
+save @m.xm8.m0[id]
+save @m.xm8.m0[vds]
+save @m.xm8.m0[cgg]
+save @m.xm8.m0[vgs]
+
+dc VG 0.05 0.10 0.01
+remzerovec
+
+write gf180_pmos_5V.raw
+
+wrdata gmid_gf180_pmos51.txt
++ @m.xm1.m0[gm]
++ @m.xm1.m0[gds]
++ @m.xm1.m0[id]
++ @m.xm1.m0[w]
++ @m.xm1.m0[vds]
++ @m.xm1.m0[cgg]
++ @m.xm1.m0[vgs]
++ @m.xm1.m0[vth]
+
+wrdata gmid_gf180_pmos52.txt
++ @m.xm2.m0[gm]
++ @m.xm2.m0[gds]
++ @m.xm2.m0[id]
++ @m.xm2.m0[w]
++ @m.xm2.m0[vds]
++ @m.xm2.m0[cgg]
++ @m.xm2.m0[vgs]
++ @m.xm2.m0[vth]
+
+wrdata gmid_gf180_pmos53.txt
++ @m.xm3.m0[gm]
++ @m.xm3.m0[gds]
++ @m.xm3.m0[id]
++ @m.xm3.m0[w]
++ @m.xm3.m0[vds]
++ @m.xm3.m0[cgg]
++ @m.xm3.m0[vgs]
++ @m.xm3.m0[vth]
+
+wrdata gmid_gf180_pmos54.txt
++ @m.xm4.m0[gm]
++ @m.xm4.m0[gds]
++ @m.xm4.m0[id]
++ @m.xm4.m0[w]
++ @m.xm4.m0[vds]
++ @m.xm4.m0[cgg]
++ @m.xm4.m0[vgs]
++ @m.xm4.m0[vth]
+
+wrdata gmid_gf180_pmos55.txt
++ @m.xm5.m0[gm]
++ @m.xm5.m0[gds]
++ @m.xm5.m0[id]
++ @m.xm5.m0[w]
++ @m.xm5.m0[vds]
++ @m.xm5.m0[cgg]
++ @m.xm5.m0[vgs]
++ @m.xm5.m0[vth]
+
+wrdata gmid_gf180_pmos56.txt
++ @m.xm6.m0[gm]
++ @m.xm6.m0[gds]
++ @m.xm6.m0[id]
++ @m.xm6.m0[w]
++ @m.xm6.m0[vds]
++ @m.xm6.m0[cgg]
++ @m.xm6.m0[vgs]
++ @m.xm6.m0[vth]
+
+wrdata gmid_gf180_pmos57.txt
++ @m.xm7.m0[gm]
++ @m.xm7.m0[gds]
++ @m.xm7.m0[id]
++ @m.xm7.m0[w]
++ @m.xm7.m0[vds]
++ @m.xm7.m0[cgg]
++ @m.xm7.m0[vgs]
++ @m.xm7.m0[vth]
+
+wrdata gmid_gf180_pmos58.txt
++ @m.xm8.m0[gm]
++ @m.xm8.m0[gds]
++ @m.xm8.m0[id]
++ @m.xm8.m0[w]
++ @m.xm8.m0[vds]
++ @m.xm8.m0[cgg]
++ @m.xm8.m0[vgs]
++ @m.xm8.m0[vth]
+
+remzerovec
+.endc
+"
